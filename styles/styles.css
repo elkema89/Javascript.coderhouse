@@ -1,10 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-    color:rgb(234, 255, 106);
 }
 body {
     background: #1f2023;
+    color: rgb(234, 255, 106);
 }
 .encabezado{
     display: flex;
@@ -22,8 +22,7 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 70px;
-    margin-left: 5px;
-    drop-shadow: 2px 2px 2px rgb(234, 255, 106);
+    margin: 10px;
 }
 .dropdown {
     display: inline-block;
@@ -33,6 +32,7 @@ body {
 }
 .dropdown-item {
     color: rgb(234, 255, 106);
+    border: 2px solid rgb(234, 255, 106);
 }
 .titulo {
     display: inline-block;
@@ -54,4 +54,44 @@ body {
 }
 .modal-content {
     background: #1f2023;
+}
+.btn-primary {
+    background: rgb(234, 255, 106);
+    color: #1f2023;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+.btn-secondary {
+    background: rgb(227, 53, 53);
+    color: #1f2023;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+.form-control {
+    border: 2px solid rgb(234, 255, 106);
+    background: #1f2023;
+}
+.card {
+    border: 2px solid rgb(234, 255, 106);
+    background: #1f2023;
+    text-align: center;
+    color: rgb(234, 255, 106);
+}
+.btn {
+    background: rgb(234, 255, 106);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px;
+}
+@media screen and (max-width: 992px){
+    .productos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
