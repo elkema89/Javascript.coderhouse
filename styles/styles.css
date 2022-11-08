@@ -23,6 +23,7 @@ body {
     justify-content: flex-start;
     width: 70px;
     margin-left: 5px;
+    drop-shadow: 2px 2px 2px rgb(234, 255, 106);
 }
 .dropdown {
     display: inline-block;
@@ -50,4 +51,7 @@ body {
     padding: 50px;
     margin-top: 200px;
     margin-bottom: 200px;
+}
+.modal-content {
+    background: #1f2023;
 }
