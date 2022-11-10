@@ -9,13 +9,18 @@ body {
 .encabezado {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  
 }
 .container {
   padding: 0;
   margin: 0;
 }
-
+.navbar-collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
 .logo {
   display: flex;
   flex-direction: row;
@@ -27,8 +32,26 @@ body {
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
+.Carrito {
+  width: 70px;
+  animation-name: logo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  margin: 25px;
+}
+.logoCarrito {
+  display: flex;
+  flex-direction: row;
+}
+#cantidadCarrito {
+  display: flex;
+  font-size: 30px;
+  margin: 40px;
+}
 .dropdown {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .dropdown-menu {
   background: #1f2023;
@@ -38,8 +61,7 @@ body {
   border: 2px solid rgb(234, 255, 106);
 }
 .titulo {
-  display: inline-block;
-  width: 75%;
+  display: inline;
   text-align: center;
 }
 .contenedorIndex {
@@ -81,6 +103,7 @@ body {
   justify-items: center;
   color: rgb(234, 255, 106);
   text-align: center;
+  margin: auto;
 }
 .btn {
   background: rgb(234, 255, 106);
@@ -91,22 +114,7 @@ body {
 .productos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 10px;
-}
-.Carrito {
-  width: 70px;
-  animation-name: logo;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-.logoCarrito {
-  display: inline-block;
-  margin-right: 0px;
-}
-#cantidadCarrito {
-  display: inline-block;
-  font-size: 30px;
-  margin: 40px;
+  gap: 20px;
 }
 @keyframes logo {
   0% {
@@ -128,6 +136,16 @@ body {
 @media screen and (max-width: 992px) {
   .productos {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .productos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .productos {
+    grid-template-columns: 1fr;
   }
 }
 #price {
